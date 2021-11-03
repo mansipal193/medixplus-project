@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medixplus</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+     <style>
+       #turnblue:hover{
+  color: blue;
+  text-decoration-color: blue;
+  transition: 1s;
+}
+#bookAppo:hover{
+  color: chartreuse !important;
+  transform: scale(1.05);
+}
+.turngreen:hover{
+  border-color: chartreuse;
+  border-radius: 10% !important;
+  overflow: hidden;
+  transform: scale(1.05);
+  
+  transition: 1s;
+}
+#logistimg:hover{
+transform: scale(1.2);
+}
+.turngreen2:hover{
+  transform: scale(1.05);
+  border-color: chartreuse;
+  border-radius: 5% !important;
+  overflow: hidden;
+  
+  transition: 1s;
+}
+.turngreen3:hover{
+  border-color: chartreuse;
+  border-radius: 30% !important;
+  overflow: hidden;
+  
+  transition: 1s;
+}
+.turngreen4:hover{
+  border-color: chartreuse;
+ 
+  overflow: hidden;
+  
+}
+        body{
+    background-color: #e9ecef;
+  }
+ 
+#sliderBackground{
+    /* background-color: skyblue; */
+    background-image: url("slider1.jpg");
+    width:100%;
+    height:400px;
+}
+.carousel-control-next{
+  width: 5% !important;
+  opacity: 0;
+}
+.carousel-control-prev{
+  width: 5% !important;
+  opacity: 0;
+}
+     </style>
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Navbar content -->
+        <div class="container-fluid">
+            <a class="navbar-brand" id="turnblue" href="/">Medixplus</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-auto">
+                
+                <a class="nav-link d-flex" href="/login">LOGIN</a>
+                <a class="nav-link d-flex" href="/register">REGISTER</a>
+                <a class="nav-link d-flex" style="color: rgb(244, 248, 26); transition: 1s;" id="bookAppo" href="/userHome">BOOK APPOINTMENT</a>
+ 
+              </div>
+             
+            </div>
+            
+          </div>
+      </nav>
+      
+     
+    <div id="sliderBackground">
+      <div style="height: 35px;"></div>
+  <div style="width: 70%; height: 80%;  margin: auto;">
+    <div style="width: 100% !important; height: 100% !important;"> 
+      <div style="width: 100% !important; height: 100% !important;" id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div style="width: 100% !important; height: 100% !important;" class="carousel-inner">
+          <div style="width: 100% !important; height: 100% !important;" class="carousel-item active" data-bs-interval="2000">
+            <img style="width: 100%; height: 100%;" src="1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div style="width: 100% !important; height: 100% !important;" class="carousel-item" data-bs-interval="2000">
+            <img style="width: 100%; height: 100%;" src="2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div style="width: 100% !important; height: 100% !important;" class="carousel-item" data-bs-interval="2000">
+            <img style="width: 100%; height: 100%;" src="3.jpg" class="d-block w-100" alt="...">
+          </div>
+        
+          <div style="width: 100% !important; height: 100% !important;" class="carousel-item" data-bs-interval="2000">
+            <img style="width: 100%; height: 100%;" src="4.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div style="width: 100% !important; height: 100% !important;" class="carousel-item" data-bs-interval="2000">
+            <img style="width: 100%; height: 100%;" src="5.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div style="width: 100% !important; height: 100% !important;" class="carousel-item" data-bs-interval="2000">
+            <img style="width: 100%; height: 100%;" src="6.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div style="width: 100% !important; height: 100% !important;" class="carousel-item" data-bs-interval="2000">
+            <img style="width: 100%; height: 100%;" src="7.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div style="width: 100% !important; height: 100% !important;" class="carousel-item" data-bs-interval="2000">
+            <img style="width: 100%; height: 100%;" src="8.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div style="width: 100% !important; height: 100% !important;" class="carousel-item" data-bs-interval="2000">
+            <img style="width: 100%; height: 100%;" src="9.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div style="width: 100% !important; height: 100% !important;" class="carousel-item" data-bs-interval="2000">
+            <img style="width: 100%; height: 100%;" src="10.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div></div>
+  </div>
+    </div>
+    
+    <div class="container rounded-3" style="box-shadow: 0 0px 30px 0 rgba(255,240,31,0.4); margin-top: 80px;  background-color: white; border-width: 3px; border-color: gray; border-style: solid;">
+      <h2 style="width: 100%; text-align: center; margin-top: 40px;">Book Home Service</h2>
+      <div  class="row" style=" background-color:white; padding-top: 30px;">
+        <div class="col">
+          <div style="width: 100%;">
+          <div style="margin-left: 50%;"><i style="font-size:48px;" class="material-icons">hourglass_top</i></div>
+           
+          <h4 style="margin-bottom: 40px;" class="text-center">Convenient And Timesaving</h4>
+          </div>
+        </div>
+        <div class="col">
+          <div style="width: 100%;">
+            <div style="margin-left: 50%;"><i style="font-size:48px;" style="margin: auto;" class="material-icons">apartment</i></div>
+            <h4 class="text-center">Free Home Cancellation</h4>
+            </div>
+     
+        </div>
+        <div class="col">
+          <div style="width: 100%;">
+            <div style="margin-left: 50%;"><i style="font-size:48px;" style="margin: auto;" class="material-icons">dvr</i></div>
+            <h4 class="text-center">Online Booking Status</h4>
+            </div>
+      
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="container" style="margin-top: 60px;">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card rounded-3 turngreen" style="box-shadow: 0 0px 30px 0 rgba(255,240,31,0.4);">
+            <img src="pregAfrican.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pregnancy Package</h5>
+              <p class="card-text">In our Pregnancy package we provide complete testing and support to our patients. <a href='/preg'>Read more>></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card rounded-3 turngreen" style="box-shadow: 0 0px 30px 0 rgba(255,240,31,0.4);">
+            <img src="diabpackage.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Diabetes Care</h5>
+              <p class="card-text">In our Diabetes Care package we provide complete testing and support to our patients.<a href='/diab'>Read more>></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card rounded-3 turngreen" style="box-shadow: 0 0px 30px 0 rgba(255,240,31,0.4);">
+            <img src="family.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Swasth Fit</h5>
+              <p class="card-text">In our Swasth Fit package we provide complete testing and support to our patients.<a href='/swasth'>Read more>></a></p>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+
+<div class="container" style="margin-top: 60px;"> <h1>Health Packages</h1> <hr>
+
+  <div style="margin-top:40px;" class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col">
+      <div class="card h-100 rounded-3 turngreen2" style="box-shadow: 0 0px 10px 0 rgba(255,240,31,0.4);">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">Swasth Fit Screen</h5>
+          <p class="card-text">This is an entry level fitness package. <a href='/swasth'>Read more>></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 rounded-3 turngreen2" style="box-shadow: 0 0px 10px 0 rgba(255,240,31,0.4);">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">Swasth Fit Basic</h5>
+          <p class="card-text">This is an entry level fitness package. <a href='/swasth'>Read more>></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 rounded-3 turngreen2" style="box-shadow: 0 0px 10px 0 rgba(255,240,31,0.4);">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">Swasth Fit Advance</h5>
+          <p class="card-text">This is an entry level fitness package. <a href='/swasth'>Read more>></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 rounded-3 turngreen2" style="box-shadow: 0 0px 10px 0 rgba(255,240,31,0.4);">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">Swasth Fit Advance</h5>
+          <p class="card-text">This is an entry level fitness package. <a href='/swasth'>Read more>></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+</div>
+
+
+<div style="margin-top: 60px;" class="container"> <h1>Lifecycle Disorders</h1> <hr>
+
+  <div style="margin-top: 40px;" class="row row-cols-1 row-cols-md-6 g-4">
+    <div class="col">
+      <div class="card h-100 rounded-3 turngreen" style="box-shadow: 0 0px 10px 0 rgba(255,240,31,0.4);" id="alphaHover">
+        <img src="disheart.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Heart</h5>
+          <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            <a href="/heart">Read</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 rounded-3 turngreen" style="box-shadow: 0 0px 10px 0 rgba(255,240,31,0.4);">
+        <img src="dislungs.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Lungs</h5>
+          <a href="/lungs">Read</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 rounded-3 turngreen" style="box-shadow: 0 0px 10px 0 rgba(255,240,31,0.4);">
+        <img src="disaller.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Allergy</h5>
+          <a href="/aller">Read</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 rounded-3 turngreen" style="box-shadow: 0 0px 10px 0 rgba(255,240,31,0.4);">
+        <img src="disthyroid.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Thyroid</h5>
+          <a href="/thyroid">Read</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 rounded-3 turngreen" style="box-shadow: 0 0px 10px 0 rgba(255,240,31,0.4);">
+        <img src="disvitamin.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">VitaminD</h5>
+          <a href="/vitamin">Read</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 rounded-3 turngreen" style="box-shadow: 0 0px 10px 0 rgba(255,240,31,0.4);">
+        <img src="discbc.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CBC</h5>
+          <a href="/cbc">Read</a>    </div>
+      </div>
+    </div>
+  </div>
+   
+</div>
+
+
+
+ 
+
+<div style="margin-top: 60px;" class="container"> <h1>Tests By Condition</h1> <hr>
+
+  <div style="margin-top: 40px;" class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col">
+      <div class="card rounded-3 turngreen4" style="box-shadow: 0 0px 2px 0 rgba(255,240,31,0.4);">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 style="display: inline;" class="card-title">Allergy</h5>
+          <a style="display: inline; text-decoration: none; float: right;" href="/aller"> >>>>>></a>
+       
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card rounded-3 turngreen4" style="box-shadow: 0 0px 2px 0 rgba(255,240,31,0.4);">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 style="display: inline;" class="card-title">Diabetes</h5>
+          <a style="display: inline; text-decoration: none; float: right;" href="/diab"> >>>>>></a>
+       
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card rounded-3 turngreen4" style="box-shadow: 0 0px 2px 0 rgba(255,240,31,0.4);">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 style="display: inline;" class="card-title">Thyroid</h5>
+          <a style="display: inline; text-decoration: none; float: right;" href="/thyroid"> >>>>>></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card rounded-3 turngreen4" style="box-shadow: 0 0px 2px 0 rgba(255,240,31,0.4);">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 style="display: inline;" class="card-title">Lungs</h5>
+          <a style="display: inline; text-decoration: none; float: right;" href="/lungs"> >>>>>></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card rounded-3 turngreen4" style="box-shadow: 0 0px 2px 0 rgba(255,240,31,0.4);">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 style="display: inline;" class="card-title">Fever</h5>
+          <a style="display: inline; text-decoration: none; float: right;" href="/aller"> >>>>>></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card rounded-3 turngreen4" style="box-shadow: 0 0px 2px 0 rgba(255,240,31,0.4);">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 style="display: inline;" class="card-title">Heart Disease</h5>
+          <a style="display: inline; text-decoration: none; float: right;" href="/heart"> >>>>>></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card rounded-3 turngreen4" style="box-shadow: 0 0px 2px 0 rgba(255,240,31,0.4);">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 style="display: inline;" class="card-title">CBC</h5>
+          <a style="display: inline; text-decoration: none; float: right;" href="/cbc"> >>>>>></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card rounded-3 turngreen4" style="box-shadow: 0 0px 2px 0 rgba(255,240,31,0.4);">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 style="display: inline;" class="card-title">Pregnancy</h5>
+          <a style="display: inline; text-decoration: none; float: right;" href="/preg"> >>>>>></a>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+   
+</div>
+
+
+
+<div style="margin-top: 60px;" class="container"> <h1>Logistic Strength</h1> <hr>
+<div style="width: 70%;  margin-left: auto; margin-right: auto; margin-top: 40px; margin-bottom: 80 px;"> <img style="width: 100%; margin-bottom: 60px; border-radius: 25px; overflow: hidden; border: 5px black solid; transition: 1s;" id="logistimg" src="logistics.png"></div>
+</div>
+
+<div style="margin-top: 60px;" class="container"> <h1>Reviews</h1> <hr>
+  <div style="width: 70%; border-radius: 20px ; margin-bottom: 60px; border: 2px solid black; overflow: hidden;  margin-left: auto; margin-right: auto; margin-top: 40px; margin-bottom: 80 px; background-image: url(https://media.istockphoto.com/photos/yellow-felt-background-picture-id157439822?b=1&k=20&m=157439822&s=170667a&w=0&h=kxrjH2nvGtkfikVFmCRxfOh2B1qRztDSYwMw8EnhFj0=); text-align: center;"> 
+  <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deserunt suscipit laudantium delectus laborum accusamus dolorum quibusdam ratione ex. Magni commodi deserunt adipisci neque sapiente quod accusantium, delectus quasi ducimus? -->
+  
+  
+
+
+  <div style="width: 100% !important; height: 100% !important;" id="carouselExampleInterval2" class="carousel slide" data-bs-ride="carousel">
+    <div style="width: 100% !important; height: 100% !important;" class="carousel-inner">
+      <% for(var j=0; j < data.length; j++) { %>
+
+        
+        <% if(j==0){ %>
+          <div style="width: 100% !important; height: 100% !important; margin-top: 100px; margin-bottom: 100px; text-align: center;" class="carousel-item active" data-bs-interval="2000">
+            <h5>" <%= data[j].review %> "</h5>
+            <div>NAME:- &nbsp;&nbsp; <%= data[j].name%></div> 
+          </div>
+        <% } else{ %>  
+          <div style="width: 100% !important; height: 100% !important; margin-top: 100px; margin-bottom: 100px; text-align: center;" class="carousel-item" data-bs-interval="2000">
+            <h5>" <%= data[j].review %> "</h5>
+            <div>NAME:- &nbsp;&nbsp; <%= data[j].name%></div> 
+          </div>
+       <% } %>
+     
+        <% } %>
+     
+   
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  
+
+
+
+  <button id="addReview" style="margin-top:10px; margin-bottom: 10px;" class="btn btn-success">ADD REVIEW</button>
+<div style="display: none; width: 70%; margin: 10px auto;" id="formId">
+  <form action="/review" method="POST">
+    <input class="form-control" style="margin-top:10px; margin-bottom: 10px;" type="text" name="name" placeholder="NAME" required>
+  <textarea class="form-control" style="margin-top:10px; margin-bottom: 10px;" name="review" placeholder="REVIEW" required></textarea>
+  <button class="btn btn-success" style="margin-top:10px; margin-bottom: 10px;" id="submitButton">submit</button>
+  </form> </div>
+</div>
+  </div>
+  
+
+    <!-- Footer start -->
+<footer class="text-center text-lg-start bg-light text-muted">
+   
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+       facebook
+      </a>
+      <a href="" class="me-4 text-reset">
+        twitter
+      </a>
+      <a href="" class="me-4 text-reset">
+      google
+      </a>
+      <a href="" class="me-4 text-reset">
+        instagram
+      </a>
+      <a href="" class="me-4 text-reset">
+       linkedin
+      </a>
+      <a href="" class="me-4 text-reset">
+      github
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Medixplus
+          </h6>
+          <p>
+           We at Medixplus pathology provide our patients the best experience and most reliable reports. We keep our machines updated and error free with regular maintenance
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="/swasth" class="text-reset">SwasthFit</a>
+          </p>
+          <p>
+            <a href="/preg" class="text-reset">Pregnancy Package</a>
+          </p>
+          <p>
+            <a href="/diab" class="text-reset">Diabetes Package</a>
+          </p>
+          <p>
+            <a href="/swasth" class="text-reset">SwasthFit Advance</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="/login" class="text-reset">Login</a>
+          </p>
+          <p>
+            <a href="/register" class="text-reset">Register</a>
+          </p>
+          <p>
+            <a href="/userHome" class="text-reset">Book Appointment</a>
+          </p>
+          <p>
+            <a href="" class="text-reset">Help</a>
+          </p>
+        </div>
+     
+
+        
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+           
+          <h6 class="text-uppercase fw-bold mb-4">
+           &nbsp;&nbsp; Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> India, Mathura 208012, UP</p>
+          <p>
+            
+            <i style="font-size:18px; display: inline; vertical-align: middle;" class="material-icons">email</i> Medixplus@gmail.com
+          </p>
+          <p><i style="font-size:18px; display: inline; vertical-align: middle;" class="material-icons">support_agent</i>+ 01 234 567 88</p>
+          <p><i style="font-size:18px; display: inline; vertical-align: middle;" class="material-icons">support_agent</i>+ 01 234 567 89</p>
+        </div>
+        
+      </div>
+      
+    </div>
+  </section>
+ 
+</footer>
+
+<!-- footer end -->
+ 
+<script>
+  const targetDiv = document.getElementById("formId");
+const btn = document.getElementById("addReview");
+const btn2=document.getElementById("submitButton");
+ 
+btn.onclick = function () {
+  if (targetDiv.style.display !== "none") {
+    targetDiv.style.display = "none";
+  } else {
+    targetDiv.style.display = "block";
+  }
+};
+btn2.onclick = function () {
+  if (targetDiv.style.display !== "none") {
+    targetDiv.style.display = "none";
+  } else {
+    targetDiv.style.display = "block";
+  }
+};
+</script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</body>
+</html>
