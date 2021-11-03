@@ -1,0 +1,9 @@
+body{
+    background-color: red !important;
+    color: white !important;
+}
+#sliderBackgorund{
+    background-color: red;
+    width:100%;
+    height:500px;
+}
