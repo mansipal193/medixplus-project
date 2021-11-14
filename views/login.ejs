@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medixplus</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+     <style>
+      #turnblue:hover{
+  color: blue;
+  text-decoration-color: blue;
+  transition: 1s;
+}
+#styleEye:hover{
+  box-shadow:  0 0 10px  rgba(222,0,0,0.6);
+      -moz-box-shadow: 0 0 10px  rgba(222,0,0,0.6);
+      -webkit-box-shadow: 0 0 10px  rgba(222,0,0,0.6);
+      -o-box-shadow: 0 0 10px  rgba(222,0,0,0.6);
+  
+}
+      .gradient-custom-2 {
+  /* fallback for old browsers */
+   
+
+  
+  background-color: #ef5734;
+background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
+  /* Chrome 10-25, Safari 5.1-6 */
+  
+}
+
+@media (min-width: 768px) {
+  .gradient-form {
+    height: 100vh !important;
+  }
+}
+@media (min-width: 769px) {
+  .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+  }
+}
+    </style>
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Navbar content -->
+        <div class="container-fluid">
+            <a class="navbar-brand" id="turnblue" href="/">Medixplus</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-auto">
+                
+                 
+                <a class="nav-link d-flex" href="/register">REGISTER</a>
+
+ 
+              </div>
+             
+            </div>
+            
+          </div>
+      </nav>
+      <% if(message.length!=0){ %>
+       
+        <div class="alert alert-danger alert-dismissible fade show" style="margin-bottom: 0px;
+        text-align: center;" role="alert"><%=message%>    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>
+     
+     <% } %>
+
+
+    <section class="h-100 gradient-form" style="background-color: #eee;">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-xl-10">
+            <div class="card rounded-3 text-black">
+              <div class="row g-0">
+                <div class="col-lg-6">
+                  <div class="card-body p-md-5 mx-md-4">
+    
+                    <div class="text-center">
+                      <img src="login.jpg" style="width: 185px; border-radius: 20%;" alt="logo">
+                      <h4 class="mt-1 mb-5 pb-1">We are The CLINIX Team</h4>
+                    </div>
+    
+                    <form  action="/login" method="POST">
+                      <p>Please login to your account</p>
+    
+                      <div class="form-outline mb-4">
+                        <input type="text" name="username" placeholder="Username"  id="form2Example11" class="form-control" required/>
+                        <label class="form-label" for="form2Example11">Username</label>
+                      </div>
+    
+                      <div class="form-outline mb-4">
+                        <input style="display: inline; width: 88%;" type="password" id="form2Example22" name="password" class="form-control showHide" required placeholder="Password"/><div id="styleEye" style="padding: 6.3px; border-radius: 10%; display:inline; border: #ced4da 1px solid;"><i style="font-size:28px; vertical-align: middle; display: inline; cursor: pointer;" id="showId" class="material-icons">visibility</i><i style="font-size:28px; vertical-align: middle; display: none; cursor: pointer;" id="hideId" class="material-icons">visibility_off</i> </div>
+                        <label class="form-label" for="form2Example22">Password</label>
+                      </div>
+    
+                     
+                        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3">Log in</button>
+                     
+                     
+    
+                      <div class="d-flex align-items-center justify-content-center pb-4">
+                        <p class="mb-0 me-2">Don't have an account?</p>
+                        <a href="/register" class="btn btn-outline-danger">Create new</a>
+                      </div>
+    
+                    </form>
+    
+                  </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                  <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                    <h4 class="mb-4">We are more than just a pathology</h4>
+                    <p class="small mb-0"> We at Medixplus pathology provide our patients the best experience and most reliable reports. We keep our machines updated and error free with regular maintenance
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+       <!-- Footer start -->
+<footer class="text-center text-lg-start bg-light text-muted">
+   
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+       facebook
+      </a>
+      <a href="" class="me-4 text-reset">
+        twitter
+      </a>
+      <a href="" class="me-4 text-reset">
+      google
+      </a>
+      <a href="" class="me-4 text-reset">
+        instagram
+      </a>
+      <a href="" class="me-4 text-reset">
+       linkedin
+      </a>
+      <a href="" class="me-4 text-reset">
+      github
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Medixplus
+          </h6>
+          <p>
+           We at Medixplus pathology provide our patients the best experience and most reliable reports. We keep our machines updated and error free with regular maintenance
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="/swasth" class="text-reset">SwasthFit</a>
+          </p>
+          <p>
+            <a href="/preg" class="text-reset">Pregnancy Package</a>
+          </p>
+          <p>
+            <a href="/diab" class="text-reset">Diabetes Package</a>
+          </p>
+          <p>
+            <a href="/swasth" class="text-reset">SwasthFit Advance</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="/login" class="text-reset">Login</a>
+          </p>
+          <p>
+            <a href="/register" class="text-reset">Register</a>
+          </p>
+          <p>
+            <a href="/userHome" class="text-reset">Book Appointment</a>
+          </p>
+          <p>
+            <a href="" class="text-reset">Help</a>
+          </p>
+        </div>
+     
+
+        
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+           
+          <h6 class="text-uppercase fw-bold mb-4">
+           &nbsp;&nbsp; Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> India, Mathura 208012, UP</p>
+          <p>
+            
+            <i style="font-size:18px; display: inline; vertical-align: middle;" class="material-icons">email</i> Medixplus@gmail.com
+          </p>
+          <p><i style="font-size:18px; display: inline; vertical-align: middle;" class="material-icons">support_agent</i>+ 01 234 567 88</p>
+          <p><i style="font-size:18px; display: inline; vertical-align: middle;" class="material-icons">support_agent</i>+ 01 234 567 89</p>
+        </div>
+        
+      </div>
+      
+    </div>
+  </section>
+ 
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+
+<!-- footer end -->
+ 
+
+    
+<!-- <form action="/login" method="POST">
+    <input type="text" name="username" placeholder="username">
+    <input type="password" name="password" placeholder="password">
+    <button>Submit</button>
+</form> -->
+    
+    
+   <script>
+     var hideButton=document.getElementById("hideId");
+     var showButton=document.getElementById("showId");
+     var passInput=document.getElementsByClassName("showHide")[0];
+     console.log(passInput);
+     hideButton.addEventListener('click',function(){
+        showButton.style.display="inline";
+        passInput.type="password"
+        hideButton.style.display="none";
+     })
+     showButton.addEventListener('click',function(){
+        hideButton.style.display="inline";
+        showButton.style.display="none";
+        passInput.type="text"
+     })
+   </script>
+    
+   
+</body>
+
+</html>
